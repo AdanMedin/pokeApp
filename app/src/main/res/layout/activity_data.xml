@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="#21212C"
+        tools:context=".DataActivity">
+
+
+        <ImageView
+            android:id="@+id/ivFondoSins"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:contentDescription="@string/imagen_fondo_sun_resplandor"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fondo_3" />
+
+
+        <ImageView
+            android:id="@+id/ivFondoS"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:contentDescription="@string/imagen_fondo_con_resplandor"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/fondo_s_3" />
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00343443"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <ImageView
+            android:id="@+id/ivPokemon"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="36dp"
+            android:contentDescription="@string/imagen_pokemon"
+            android:minWidth="200dp"
+            android:minHeight="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivPokedexLogo"
+            app:srcCompat="@drawable/p1"
+            tools:ignore="PxUsage" />
+
+        <TextView
+            android:id="@+id/tvNombrePokemon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/nombrepokemon"
+            android:textColor="#FFAC07"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivPokemon" />
+
+        <TextView
+            android:id="@+id/tvTipo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/background_tipo_normal"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="2dp"
+            android:text="@string/tipo1"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/tv_tipo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/background_tipo_normal"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="2dp"
+            android:text="@string/tipo2"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/tvTipo1"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/ivPokedexLogo"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/logo_pokedex"
+            android:elevation="30dp"
+            android:outlineProvider="bounds"
+            android:outlineSpotShadowColor="#D60202"
+
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pokedex_logo"
+            tools:targetApi="p" />
+
+        <TextView
+            android:id="@+id/tvN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="124dp"
+            android:text="@string/n"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivPokemon"
+            app:layout_constraintTop_toBottomOf="@+id/ivPokedexLogo" />
+
+        <TextView
+            android:id="@+id/tvNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="124dp"
+            android:text="@string/num"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tvN"
+            app:layout_constraintTop_toBottomOf="@+id/ivPokedexLogo" />
+
+        <TextView
+            android:id="@+id/tvD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/debilidad"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTipo1" />
+
+        <TextView
+            android:id="@+id/tvDebilidad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/background_tipo_normal"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="2dp"
+            android:text="@string/debilidad1"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvD" />
+
+        <TextView
+            android:id="@+id/tvDebilidad2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/background_tipo_normal"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="2dp"
+            android:text="@string/debilidad2"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/tvDebilidad1"
+            app:layout_constraintTop_toBottomOf="@+id/tvD" />
+
+        <TextView
+            android:id="@+id/tvDebilidad3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/background_tipo_normal"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="2dp"
+            android:text="@string/debilidad3"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/tvDebilidad2"
+            app:layout_constraintTop_toBottomOf="@+id/tvD" />
+
+        <TextView
+            android:id="@+id/tvDebilidad4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/background_tipo_normal"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="2dp"
+            android:text="@string/debilidad4"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/tvDebilidad3"
+            app:layout_constraintTop_toBottomOf="@+id/tvD" />
+
+        <TextView
+            android:id="@+id/tvAltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/altura"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/ivPokemon"
+            app:layout_constraintTop_toBottomOf="@+id/ivPokedexLogo" />
+
+        <TextView
+            android:id="@+id/tvPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/peso"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/tvAltura"
+            app:layout_constraintTop_toBottomOf="@+id/tvAltura" />
+
+        <TextView
+            android:id="@+id/tvSexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/sexo"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tvPeso"
+            app:layout_constraintTop_toBottomOf="@+id/tvPeso" />
+
+        <TextView
+            android:id="@+id/tvCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/categoria"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/tvC"
+            app:layout_constraintTop_toBottomOf="@+id/tvC" />
+
+        <TextView
+            android:id="@+id/tvHabilidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/habilidad"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/tvH"
+            app:layout_constraintTop_toBottomOf="@+id/tvH" />
+
+        <TextView
+            android:id="@+id/tvC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="70dp"
+            android:text="@string/categor_a"
+            android:textColor="#BFFFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNombrePokemon" />
+
+        <TextView
+            android:id="@+id/tvH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/habilidad2"
+            android:textColor="#BFFFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvCategoria"
+            app:layout_constraintTop_toBottomOf="@+id/tvCategoria" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/evoluci_n"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDebilidad1" />
+
+        <ImageView
+            android:id="@+id/ivPokemonEvo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/imagen_pokemon_evolucion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            app:srcCompat="@drawable/p1" />
+
+        <TextView
+            android:id="@+id/tvNevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/n"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/ivPokemonEvo"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/tvNumeroEvo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/num"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/tvNevo"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/tvNombreEvo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/nombrepokemon"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/ivPokemonEvo"
+            app:layout_constraintTop_toBottomOf="@+id/tvNevo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="48dp"
+            android:text="@string/tip"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNombrePokemon" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

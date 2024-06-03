@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/listPreferredItemHeight"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/iv_pokemon"
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_centerHorizontal="true"
+        tools:srcCompat="@drawable/p1"
+        android:contentDescription="@string/imagen_pokemon"
+        tools:ignore="PxUsage" />
+
+    <TextView
+        android:id="@+id/tv_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_pokemon"
+        android:layout_alignStart="@+id/iv_pokemon"
+        android:layout_marginTop="5dp"
+        android:text="@string/n_"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        tools:ignore="SmallSp,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_N"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_pokemon"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/tv_numero"
+        android:text="@string/num"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        tools:ignore="SmallSp,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_numero"
+        android:layout_alignStart="@+id/tv_numero"
+
+        android:layout_marginTop="5dp"
+        android:text="@string/nombrepokemon"
+        android:textColor="#FFAC07"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_tipo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nombre"
+        android:layout_alignStart="@+id/tv_nombre"
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="1dp"
+        android:background="@drawable/background_tipo_normal"
+        android:text="@string/tipo1"
+        android:textColor="@color/white"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_tipo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nombre"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="1dp"
+        android:layout_toEndOf="@+id/tv_tipo1"
+        android:background="@drawable/background_tipo_normal"
+        android:text="@string/tipo2"
+        android:textSize="12sp"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

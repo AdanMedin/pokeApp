@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#21212C"
+    >
+
+    <ImageView
+        android:id="@+id/ivFondoSins"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/toolbar"
+        android:contentDescription="@string/imagen_fondo_sun_resplandor" />
+
+    <ImageView
+        android:id="@+id/ivFondoS"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/toolbar_s_ok"
+        android:contentDescription="@string/imagen_fondo_con_resplandor" />
+
+    <ImageView
+        android:id="@+id/ivPokedexLogo"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/logo_pokedex"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pokedex_logo"
+        tools:targetApi="p" />
+
+    <ListView
+        android:id="@+id/listVPokemon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acText">
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/btnExit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/exit"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/boton_exit" />
+
+    <AutoCompleteTextView
+        android:id="@+id/acText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/pok_mon"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:minWidth="150dp"
+        android:minHeight="48dp"
+        android:textColor="#FFAC07"
+        android:selectAllOnFocus="true"
+        android:completionThreshold="1"
+        android:textAlignment="center"
+        android:textColorHint="#FFAC07"
+        android:cursorVisible="false"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPokedexLogo" />
+
+    <ImageButton
+        android:id="@+id/ibPDex"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="430dp"
+        android:backgroundTint="#00362251"
+        android:contentDescription="@string/boton_ver_lista_de_nuevo"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pdex"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="n">nº:</string>
+    <string name="nombre_pokemon">nombre pokemon</string>
+    <string name="num">num</string>
+    <string name="n_">nº:</string>
+    <string name="nombre">Nombre</string>
+    <string name="tipo">Tipo</string>
+    <string name="cerrar_app">cerrar app</string>
+    <string name="pokedex">Pokedex</string>
+    <string name="logo_pokedex">Logo pokedex</string>
+    <string name="imagen_pokemon">imagen pokemon</string>
+    <string name="tipo1">Tipo1</string>
+    <string name="tipo2">Tipo2</string>
+    <string name="nombrepokemon">NombrePokemon</string>
+    <string name="altura">Altura</string>
+    <string name="peso">Peso</string>
+    <string name="sexo">Sexo</string>
+    <string name="categor_a">Categoría</string>
+    <string name="evoluci_n">Evolución</string>
+    <string name="imagen_fondo_sun_resplandor">imagen fondo sun resplandor</string>
+    <string name="imagen_fondo_con_resplandor">imagen fondo con resplandor</string>
+    <string name="debilidad">Debilidad</string>
+    <string name="debilidad1">debilidad1</string>
+    <string name="debilidad2">debilidad2</string>
+    <string name="debilidad3">debilidad3</string>
+    <string name="debilidad4">debilidad4</string>
+    <string name="categoria">Categoria</string>
+    <string name="habilidad">Habilidad</string>
+    <string name="habilidad2">Habilidad</string>
+    <string name="imagen_pokemon_evolucion">imagen pokemon evolucion</string>
+    <string name="tip">Tipo</string>
+    <string name="pokeball_splash">pokeball splash</string>
+    <string name="boton_exit">boton exit</string>
+    <string name="logo_pokedex_splash">Logo pokedex splash</string>
+    <string name="imagen_gengar_sin_brillo">imagen gengar sin brillo</string>
+    <string name="imagen_gengar_con_brillo">imagen gengar con brillo</string>
+    <string name="pok_mon">PoKéMoN</string>
+    <string name="boton_ver_lista_de_nuevo">boton ver lista de nuevo</string>
+
+    <!-- Fuente de datos -->
+    <string-array name="pokName">
+        <item>Bulbasaur</item>
+        <item>Ivysaur</item>
+        <item>Venusaur</item>
+        <item>Charmander</item>
+        <item>Charmeleon</item>
+        <item>Charizard</item>
+        <item>Squirtle</item>
+        <item>Wartortle</item>
+        <item>Blastoise</item>
+        <item>Caterpie</item>
+        <item>Metapod</item>
+        <item>Butterfree</item>
+        <item>Weedle</item>
+        <item>Kakuna</item>
+        <item>Beedrill</item>
+        <item>Pidgey</item>
+        <item>Pidgeotto</item>
+        <item>Pidgeot</item>
+        <item>Rattata</item>
+        <item>Raticate</item>
+        <item>Spearow</item>
+        <item>Fearow</item>
+        <item>Ekans</item>
+        <item>Arbok</item>
+        <item>Pikachu</item>
+        <item>Raichu</item>
+        <item>Sandshrew</item>
+        <item>Sandslash</item>
+        <item>Nidoran♀</item>
+        <item>Nidorina</item>
+        <item>Nidoqueen</item>
+        <item>Nidoran♂</item>
+        <item>Nidorino</item>
+        <item>Nidoking</item>
+        <item>Clefairy</item>
+        <item>Clefable</item>
+        <item>Vulpix</item>
+        <item>Ninetales</item>
+        <item>Jigglypuff</item>
+        <item>Wigglytuff</item>
+        <item>Zubat</item>
+        <item>Golbat</item>
+        <item>Oddish</item>
+        <item>Gloom</item>
+        <item>Vileplume</item>
+        <item>Paras</item>
+        <item>Parasect</item>
+        <item>Venonat</item>
+        <item>Venomoth</item>
+        <item>Diglett</item>
+        <item>Dugtrio</item>
+    </string-array>
+
+</resources>
